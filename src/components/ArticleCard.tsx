@@ -11,9 +11,7 @@ interface ArticleCardProps {
 const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
   const [imgError, setImgError] = useState(false);
 
-  const author = article.creator?.filter(Boolean)[0];
-  const category = article.category?.[0];
-  const country = article.country?.[0];
+  const author = article.creator?.filter(Boolean)[0]; 
 
   return (
     <article className="group bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden hover:shadow-lg hover:border-brand-200 dark:hover:border-brand-800 transition-all duration-300 flex flex-col">

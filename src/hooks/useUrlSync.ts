@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useFilters } from '../context/FiltersContext';
-import type { Filters, SortBy, SortOrder } from '../types';
+import type {  SortBy, SortOrder } from '../types';
 
 /**
  * Bidirectionally syncs filter state with URL query params.
